@@ -1,0 +1,27 @@
+{
+  "name": "data-ingestion-service",
+  "version": "1.0.0",
+  "description": "A service for ingesting user data from an external API and storing it in a database.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "migrate": "node src/db/migrations/init.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "mysql2": "^2.2.5",
+    "node-fetch": "^2.7.0",
+    "pg": "^8.20.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^16.11.7",
+    "@types/node-fetch": "^2.6.13",
+    "@types/pg": "^8.20.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
